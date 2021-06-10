@@ -1,0 +1,48 @@
+<!--input details -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Input details</title>
+	<style>
+		p {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+    <fieldset>
+    	<legend>Details</legend>
+    	Name: <input type="text" id="uname" required value="uname" /><br/><br/>
+    	Adhaar: <input type="tel" id="adhaar" required value="768558674245"  /><br/><br/>
+    	phone: <input type="tel" id="mobile" required value="123456789" /><br/><br/>
+    	<button onclick="readData()">submit</button>
+    </fieldset>
+    <h1>Result Table</h1>
+    <table border="1">
+    	<tr>
+    		<th>Name</th>
+    		<th>Adhaar</th>
+    		<th>Mobile Number</th>
+    	</tr>
+    	<tr>
+    		<td id="abc">Not Yet Entered</td>
+    		<td id="bat">Not yet Entered</td>
+    		<td id="def">Not Yet Entered</td>
+       	</tr>
+    </table>
+    <p id="result"></p>
+    <script>
+    	function readData() {
+    		var uname=document.getElementById('uname').value;
+    		var adhaar=document.getElementById('adhaar').value;
+    		var phone=document.getElementById('mobile').value;
+
+    		document.getElementById('abc').innerHTML=uname;
+    		document.getElementById('bat').innerHTML=adhaar;
+    		document.getElementById('def').innerHTML=phone;
+
+    	}
+    </script>
+</body>
+</html>

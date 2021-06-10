@@ -1,0 +1,27 @@
+<!--use select-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>use select</title>
+</head>
+<body>
+	<label>choose city</label>
+	<select id="city">
+		<option>vij</option>
+		<option>hyd</option>
+		<option>gnt</option>
+		<option>kol</option>
+		<option>guj</option>
+		<option>agra</option>
+	</select>
+	<button onclick="read()">submit</button>
+	<p id="result"></p>
+	<script>
+		function read(){
+			var c=document.getElementById('city').value;
+			document.getElementById('result').innerHTML=c;
+		}
+	</script>
+</body>
+</html> 
